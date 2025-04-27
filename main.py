@@ -14,7 +14,7 @@ def main(pid_initial, plant, model_name, mode, aggressiveness):
     reference_signal = np.heaviside(time_initial, 1) 
     pid_tuned = pid_initial.copy()
     tuner=LLM_PID_Tuner(model_name=model_name, mode=mode, aggressiveness=aggressiveness) 
-    plt.figure(figsize=(8, 3))
+    plt.figure(figsize=(8, 5))
     results=[]
     for i in range(50):  # Stop early if criteria met
         closed_loop_tuned = ctrl.feedback(pid_tuned.tf() * plant)
@@ -33,9 +33,9 @@ def main(pid_initial, plant, model_name, mode, aggressiveness):
         time.sleep(1)
     plt.plot(time_tuned, response_tuned, 'r', label=f"last iteration",linestyle="solid", linewidth=2)
     plt.plot(time_initial, response_initial,'b', label="initial PID", linestyle="dashed", linewidth=2)
-    plt.xlabel("Time (s)")
-    plt.ylabel("Response")
-    plt.legend()
+    plt.xlabel("Time (s)", fontsize=14)
+    plt.ylabel("Response", fontsize=14)
+    plt.legend(fontsize=12)
     plt.grid(True)
     plt.show()   
     df = pd.DataFrame([{**entry['parameters'], **entry['metrics']} for entry in tuner.history])

@@ -92,9 +92,6 @@ class LLM_PID_Tuner:
         Ensure the new PID gains do not destabilize the system.
         Respond in JSON format: {{"Kp": value, "Ti": value, "Td": value}}
         """
-        #After JSON add explanation.
-
-       
         
         #Give only values in JSON structure without any additions.
         #Everytime try to make updatas of parameters.
