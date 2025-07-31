@@ -75,17 +75,8 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## Citation
 If you use this work in your research or projects, please cite it as:
 
-```bibtex
-@INPROCEEDINGS{11091752,
-  author={Kamenko, Ilija and Ilic, Slobodan and Congradac, Velimir},
-  booktitle={2025 10th International Conference on Smart and Sustainable Technologies (SpliTech)}, 
-  title={LLM-based PID controller optimization}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={1-6},
-  keywords={Adaptation models;Tuners;Computational modeling;Manuals;Robustness;Real-time systems;Stability analysis;Prompt engineering;Tuning;Optimization;LLM;AI;PID controller;tuning;optimization},
-  doi={10.23919/SpliTech65624.2025.11091752}}
+```
+Ilija Kamenko, Slobodan Ilic and Velimir Congradac, "LLM-based PID controller optimization," 2025 10th International Conference on Smart and Sustainable Technologies (SpliTech), Bol and Split, Croatia, 2025, pp. 1-6, doi: 10.23919/SpliTech65624.2025.11091752.
 ```
 
 ## License
